@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Построение таблиц</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="page-wrapper">
+        <div class="table-block">
+            <div class="table-block__content">
+                <div class="table-block__title">Таблица на основе JSON</div>
+                <div class="table-block__item-wrapper">
+                    <div class="table-block__item-title">
+                        Введите JSON <span>(можно массив объектов, можно просто объект)</span>
+                    </div>
+                    <textarea class="table-block__textarea js-textarea">[{"cat":3,"dog":"no","apple":100,"pear":5,"banana":false},{"cat":2,"dog":"yes","apple":15,"pear":2,"banana":true},{"cat":1,"dog":"maybe","apple":99,"pear":234,"banana":false},{"rat":1.4,"phone":24,"book":"book of jungle","pear":1}]</textarea>
+                </div>
+                <div class="table-block__item-wrapper">
+                    <span class="table-block__item-submit js-convert">Создать таблицу</span>
+                </div>
+                <div class="table-block__item-wrapper">
+                    <div class="table-block__item-title">
+                        Результат <span>(нажмите на заголовок для сотрировки)</span>
+                    </div>
+                    <div class="table-block__container js-container">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,112 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #F5F5F5;
+}
+
+.page-wrapper {
+    text-align: center;
+}
+
+.table-block table {
+    margin: 0 auto;
+    border: 4px solid grey;
+    border-collapse: collapse;
+    opacity: 0;
+    text-align: center;
+    -webkit-transition: opacity 0.33s linear;
+    transition: opacity 0.33s linear;
+}
+
+.table-block table.active {
+    opacity: 1;
+}
+
+.table-block td, .table-block th {
+    border: 2px solid grey;
+    padding: 10px;
+}
+
+.table-block th {
+    cursor: pointer;
+    background: #FFF;
+    -webkit-transition: all 0.33s linear;
+    transition: all 0.33s linear;
+}
+
+.table-block th:hover {
+    background: grey;
+    color: #FFF;
+}
+
+.table-block {
+    background: #FFF;
+    display: inline-block;
+    text-align: left;
+    margin: 100px 0 0;
+    border: 4px solid grey;
+    border-radius: 3px;
+    padding: 10px 15px;
+    min-width: 400px;
+}
+
+.table-block__title {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.table-block__item-title {
+    text-align: left;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.table-block__item-title span {
+    text-align: left;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.table-block__textarea {
+    display: block;
+    width: 100%;
+    height: 160px;
+    outline: none;
+    border: 2px solid grey;
+    resize: none;
+    padding: 10px 10px;
+}
+
+.table-block__item-submit {
+    display: inline-block;
+    border: 4px solid grey;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+    background: #FFF;
+    font-size: 15px;
+    font-weight: 600;
+    -webkit-transition: all 0.33s linear;
+    transition: all 0.33s linear;
+}
+
+.table-block__item-submit:hover {
+    background: grey;
+    color: #FFF;
+}
+
+.table-block__item-wrapper + .table-block__item-wrapper {
+    margin-top: 15px;
+}
